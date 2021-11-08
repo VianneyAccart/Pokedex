@@ -1,7 +1,7 @@
-<div *ngFor="let pokemon of pokemons" class="card" style="width: 18rem;">
+<div *ngFor="let pokemon of pokemons" class="card col-lg-3 col-sm-5 col-12 my-2 mx-2">
     <img src="{{pokemon.imageUrl}}" class="card-img-top" alt="Image de {{pokemon.name}}">
     <div class="card-body">
-        <button (click)="showPokemon(pokemon)" class="btn btn-warning">Plus d'informations</button>
+        <button (click)="showPokemon(pokemon)" class="btn btn-warning">{{pokemon.isShown ? "Moins d'informations" : "Plus d'informations"}}</button>
         <div *ngIf="this.pokemon.isShown">
             <app-pokemon-detail [pokemonName]="pokemon.name" [pokemonDescription]="pokemon.description">
             </app-pokemon-detail>

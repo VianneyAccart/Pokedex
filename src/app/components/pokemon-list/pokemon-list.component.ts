@@ -14,12 +14,15 @@ export class PokemonListComponent implements OnInit {
     this.pokemons = new Array();
   }
 
+  // Permet de récupérer les données de pokemons.json
   ngOnInit(): void {
     this.pokedexService.getPokemons().subscribe((pokemon: any) => {
+      // Le tableau d'objets pokemon issu du pokemons.json est stocké dans pokemons
       this.pokemons = pokemon;
     });
   }
 
+  // Affiche les informations d'un pokémon à la fois et change le contenu du bouton
   showPokemon(pokemon: Pokemon): void {
     pokemon.isShown = !pokemon.isShown;
   }
