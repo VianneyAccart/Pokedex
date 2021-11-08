@@ -1,1 +1,10 @@
-<p>pokemon-list works!</p>
+<div *ngFor="let pokemon of pokemons" class="card" style="width: 18rem;">
+    <img src="{{pokemon.imageUrl}}" class="card-img-top" alt="Image de {{pokemon.name}}">
+    <div class="card-body">
+        <button (click)="showPokemon(pokemon)" class="btn btn-warning">Plus d'informations</button>
+        <div *ngIf="this.pokemon.isShown">
+            <app-pokemon-detail [pokemonName]="pokemon.name" [pokemonDescription]="pokemon.description">
+            </app-pokemon-detail>
+        </div>
+    </div>
+</div>

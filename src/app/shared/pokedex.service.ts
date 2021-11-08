@@ -10,6 +10,6 @@ export class PokedexService {
   constructor(private httpClient: HttpClient) {}
 
   getPokemons(): Observable<Pokemon[]> {
-    return this.httpClient.get<Pokemon[]>('/shared/pokemons.json');
+    return this.httpClient.get<Pokemon[]>('assets/pokemons.json');
   }
 }

@@ -2,11 +2,14 @@ export class Pokemon {
   private _name: string;
   private _imageUrl: string;
   private _description: string;
+  // Permet par défaut de ne pas afficher les infos complémentaire du pokémon
+  private _isShown: boolean;
 
   constructor(name: string, imageUrl: string, description: string) {
     (this._name = name),
       (this._imageUrl = imageUrl),
-      (this._description = description);
+      (this._description = description),
+      (this._isShown = false);
   }
 
   /**
@@ -55,5 +58,21 @@ export class Pokemon {
    */
   public set description(value: string) {
     this._description = value;
+  }
+
+  /**
+   * Getter isShown
+   * @return {boolean}
+   */
+  public get isShown(): boolean {
+    return this._isShown;
+  }
+
+  /**
+   * Setter isShown
+   * @param {boolean} value
+   */
+  public set isShown(value: boolean) {
+    this._isShown = value;
   }
 }
