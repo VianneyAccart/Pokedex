@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Bulbizarre",
+        "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+        "description": "Il y a une graine sur son dos depuis sa naissance. Elle grossit un peu chaque jour."
+    },
+    {
+        "name": "Herbizarre",
+        "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+        "description": "Son bulbe dorsal est devenu si gros qu'il ne peut plus se tenir sur ses pattes postérieures."
+    },
+    {
+        "name": "Florizarre",
+        "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+        "description": "Sa plante donne une grosse fleur quand elle absorbe les rayons du soleil. Il est toujours à la recherche des endroits les plus ensoleillés."
+    },
+    {
+        "name": "Salamèche",
+        "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+        "description": "Il préfère ce qui est chaud. En cas de pluie, de la vapeur se forme autour de sa queue."
+    },
+    {
+        "name": "Reptincel",
+        "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
+        "description": "Il est très brutal. En combat, il se sert de ses griffes acérées et de sa queue enflammée pour mettre en pièces ses adversaires."
+    },
+    {
+        "name": "Dracaufeu",
+        "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+        "description": "Son souffle brûlant peut faire fondre la roche. Il est parfois la cause d'incendies de forêt."
+    },
+    {
+        "name": "Carapuce",
+        "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+        "description": "Quand il rentre son cou dans sa carapace, il peut projeter de l'eau à haute pression."
+    },
+    {
+        "name": "Carabaffe",
+        "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
+        "description": "Il est considéré comme un symbole de longévité. On reconnaît les spécimens les plus âgés à la mousse qui pousse sur leur carapace."
+    },
+    {
+        "name": "Tortank",
+        "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+        "description": "Il écrase ses adversaires de tout son poids pour leur faire perdre connaissance. Il rentre dans sa carapace s'il se sent en danger."
+    }
+]
