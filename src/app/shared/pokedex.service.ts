@@ -12,4 +12,8 @@ export class PokedexService {
   getPokemons(): Observable<Pokemon[]> {
     return this.httpClient.get<Pokemon[]>('assets/pokemons.json');
   }
+
+  addPokemon(pokemon: Pokemon){
+    
+  }
 }

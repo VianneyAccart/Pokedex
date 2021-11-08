@@ -1,1 +1,38 @@
-<p>create-pokemon-page works!</p>
+<div class="container">
+    <h1>Créer un pokémon</h1>
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-sm-7 col-10">
+            <p>Entrez les informations du pokémon :</p>
+            <form [formGroup]="pokemonForm" (ngSubmit)="createPokemonForm.valid && createPokemon()"
+                #createPokemonForm="ngForm">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nom du pokémon"
+                        formControlName="name">
+                    <label for="floatingInput">Nom du pokémon</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Description"
+                        formControlName="description">
+                    <label for="floatingPassword">Description</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword"
+                        placeholder="URL de l'image du pokémon" formControlName="url">
+                    <label for="floatingPassword">URL de l'image du pokémon</label>
+                </div>
+                <button [disabled]="createPokemonForm.invalid" type="submit" class="btn btn-warning">Créer</button>
+            </form>
+        </div>
+        <div class="col-lg-3 col-sm-5 col-10">
+            <p>Prévisualisation :</p>
+            <div class="card p-3">
+                <img *ngIf="pokemonForm.value.url" src="{{pokemonForm.value.url}}" class="card-img-top"
+                    alt="Image de votre pokémon" style="width:100%">
+                <div class="card-body">
+                    <h5 class="card-title">{{pokemonForm.value.name}}</h5>
+                    <p class="card-text">{{pokemonForm.value.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

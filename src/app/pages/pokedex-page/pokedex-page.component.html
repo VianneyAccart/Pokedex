@@ -1,7 +1,7 @@
 <div class="container">
     <h1>Liste des pokémons</h1>
-    <div class="row d-flex justify-content-center">
-        <app-pokemon-list class="d-flex flex-wrap justify-content-center"></app-pokemon-list>
+    <div class="row">
+        <app-pokemon-list class="d-flex justify-content-center flex-wrap" [pokemons]="pokemons"></app-pokemon-list>
+        <app-pokemon-detail></app-pokemon-detail>
     </div>
 </div>
-
